@@ -110,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Code Help taken from https://github.com/xgouchet/AXML/blob/master/demo/src/DumpApkXml.java
+     */
     private static void dumpNode(Node node, String indent) {
         System.out.println(indent + node.getNodeName() + " " + attrsToString(node.getAttributes()) + " -> " + node.getNodeValue());
         NodeList children = node.getChildNodes();
